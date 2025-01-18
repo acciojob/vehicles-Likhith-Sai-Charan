@@ -5,6 +5,18 @@ public class F1 extends Car {
         super(name, 4, 2, 6, isManual, "Racing", 1);
     }
 
+    public String getName() {
+        return super.getName();
+    }
+
+    public boolean isManual() {
+        return super.isManual();
+    }
+
+    public int getCurrentGear() {
+        return super.getCurrentGear();
+    }
+
     public void accelerate(int rate) {
         int newSpeed = getCurrentSpeed() + rate; // Adjusting speed instead of directly setting it
 
